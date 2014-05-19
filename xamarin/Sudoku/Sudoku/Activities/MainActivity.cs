@@ -5,12 +5,18 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Preferences;
 
 namespace Sudoku
 {
 	[Activity (Label = "Sudoku", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
+		protected override void OnStart(){
+			base.OnStart();
+			PreferenceManager.SetDefaultValues(this, Resource.Xml.Preferences , false);
+		}
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -19,9 +25,6 @@ namespace Sudoku
 				OnClick((View)sender);
 			};
 			FindViewById(Resource.Id.options_button).Click += (sender, e) => {
-				OnClick((View)sender);
-			};
-			FindViewById(Resource.Id.solve_button).Click += (sender, e) => {
 				OnClick((View)sender);
 			};
 			FindViewById(Resource.Id.statistics_button).Click += (sender, e) => {
@@ -34,9 +37,6 @@ namespace Sudoku
 			switch (v.Id) {
 			case Resource.Id.new_game_button:
 				intent = new Intent (this, typeof(Game));
-				break;
-			case Resource.Id.solve_button:
-				intent = new Intent (this, typeof(Solve));
 				break;
 			case Resource.Id.options_button:
 				intent = new Intent (this, typeof(Options));

@@ -5,5 +5,7 @@
         android:summary="Set difficulty"
         android:key="difficultyPref"
         android:defaultValue="Easy"
-        android:entries="@array/difficultiesArray" />
+        android:entries="@array/difficultiesArray"
+        android:entryValues="@array/difficultiesArray"
+        android:id="@+id/difficulty_list_preference"/>
 </PreferenceScreen>

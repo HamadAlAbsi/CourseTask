@@ -51,9 +51,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\Game.cs" />
-    <Compile Include="Activities\Solve.cs" />
     <Compile Include="Activities\Options.cs" />
     <Compile Include="Activities\Statistics.cs" />
+    <Compile Include="Controllers\GameController.cs" />
+    <Compile Include="Model\Field.cs" />
+    <Compile Include="Util\IntPoint.cs" />
+    <Compile Include="Views\SudokuFieldView.cs" />
+    <Compile Include="Util\SudokuFileReader.cs" />
+    <Compile Include="Controllers\DatabaseController.cs" />
+    <Compile Include="Model\RecordInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -61,17 +67,31 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\values\Dimens.xml" />
     <AndroidResource Include="Resources\layout\Game.axml" />
-    <AndroidResource Include="Resources\layout\Solve.axml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\layout\Options.axml" />
     <AndroidResource Include="Resources\layout\Statistics.axml" />
-    <AndroidResource Include="Resources\values\Dimens.xml" />
+    <AndroidResource Include="Resources\drawable\background_field.png" />
+    <AndroidResource Include="Resources\raw\easy.txt" />
+    <AndroidResource Include="Resources\raw\hard.txt" />
+    <AndroidResource Include="Resources\raw\medium.txt" />
+    <AndroidResource Include="Resources\xml\Preferences.xml" />
+    <AndroidResource Include="Resources\values\Arrays.xml" />
+    <AndroidResource Include="Resources\layout-land\Game.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Activities\" />
+    <Folder Include="Resources\layout\" />
+    <Folder Include="Views\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Model\" />
+    <Folder Include="Util\" />
+    <Folder Include="Resources\raw\" />
+    <Folder Include="Resources\xml\" />
+    <Folder Include="Resources\layout-land\" />
   </ItemGroup>
 </Project>

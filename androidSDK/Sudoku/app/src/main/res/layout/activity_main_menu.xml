@@ -18,15 +18,6 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/solve_sudoku_button"
-        android:id="@+id/solve_sudoku_button"
-        android:layout_marginTop="@dimen/main_menu_margin"
-        android:layout_marginBottom="@dimen/main_menu_margin"
-        android:onClick="onButtonClick" />
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:text="@string/options_button"
         android:id="@+id/options_button"
         android:layout_marginTop="@dimen/main_menu_margin"

@@ -28,6 +28,22 @@ namespace Sudoku
 		{
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int difficultiesArray = 2131099648;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -44,8 +60,32 @@ namespace Sudoku
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int main_menu_margin = 2130968576;
+			// aapt resource value: 0x7f070000
+			public const int activity_horizontal_margin = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int activity_vertical_margin = 2131165185;
+			
+			// aapt resource value: 0x7f070005
+			public const int field_margin = 2131165189;
+			
+			// aapt resource value: 0x7f070006
+			public const int field_margin_land = 2131165190;
+			
+			// aapt resource value: 0x7f070002
+			public const int main_menu_margin = 2131165186;
+			
+			// aapt resource value: 0x7f070007
+			public const int time_text_margin = 2131165191;
+			
+			// aapt resource value: 0x7f070008
+			public const int time_text_margin_land = 2131165192;
+			
+			// aapt resource value: 0x7f070003
+			public const int time_text_size = 2131165187;
+			
+			// aapt resource value: 0x7f070004
+			public const int time_text_size_land = 2131165188;
 			
 			static Dimension()
 			{
@@ -61,7 +101,10 @@ namespace Sudoku
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int background_field = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Icon = 2130837505;
 			
 			static Drawable()
 			{
@@ -76,20 +119,65 @@ namespace Sudoku
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int new_game_button = 2131099649;
+			// aapt resource value: 0x7f09000b
+			public const int button_0 = 2131296267;
 			
-			// aapt resource value: 0x7f060003
-			public const int options_button = 2131099651;
+			// aapt resource value: 0x7f090002
+			public const int button_1 = 2131296258;
 			
-			// aapt resource value: 0x7f060002
-			public const int solve_button = 2131099650;
+			// aapt resource value: 0x7f090005
+			public const int button_2 = 2131296261;
 			
-			// aapt resource value: 0x7f060004
-			public const int statistics_button = 2131099652;
+			// aapt resource value: 0x7f090008
+			public const int button_3 = 2131296264;
 			
-			// aapt resource value: 0x7f060000
-			public const int textView1 = 2131099648;
+			// aapt resource value: 0x7f090003
+			public const int button_4 = 2131296259;
+			
+			// aapt resource value: 0x7f090006
+			public const int button_5 = 2131296262;
+			
+			// aapt resource value: 0x7f090009
+			public const int button_6 = 2131296265;
+			
+			// aapt resource value: 0x7f090004
+			public const int button_7 = 2131296260;
+			
+			// aapt resource value: 0x7f090007
+			public const int button_8 = 2131296263;
+			
+			// aapt resource value: 0x7f09000a
+			public const int button_9 = 2131296266;
+			
+			// aapt resource value: 0x7f090013
+			public const int clear_statistics = 2131296275;
+			
+			// aapt resource value: 0x7f090001
+			public const int game_field = 2131296257;
+			
+			// aapt resource value: 0x7f09000c
+			public const int new_game_button = 2131296268;
+			
+			// aapt resource value: 0x7f09000d
+			public const int options_button = 2131296269;
+			
+			// aapt resource value: 0x7f09000f
+			public const int scrollView = 2131296271;
+			
+			// aapt resource value: 0x7f09000e
+			public const int statistics_button = 2131296270;
+			
+			// aapt resource value: 0x7f090010
+			public const int text_easy = 2131296272;
+			
+			// aapt resource value: 0x7f090012
+			public const int text_hard = 2131296274;
+			
+			// aapt resource value: 0x7f090011
+			public const int text_medium = 2131296273;
+			
+			// aapt resource value: 0x7f090000
+			public const int time_text_view = 2131296256;
 			
 			static Id()
 			{
@@ -114,10 +202,7 @@ namespace Sudoku
 			public const int Options = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Solve = 2130903043;
-			
-			// aapt resource value: 0x7f030004
-			public const int Statistics = 2130903044;
+			public const int Statistics = 2130903043;
 			
 			static Layout()
 			{
@@ -129,26 +214,54 @@ namespace Sudoku
 			}
 		}
 		
+		public partial class Raw
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int easy = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int hard = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int medium = 2131034114;
+			
+			static Raw()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Raw()
+			{
+			}
+		}
+		
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int app_name = 2131034113;
+			// aapt resource value: 0x7f080002
+			public const int action_settings = 2131230722;
 			
-			// aapt resource value: 0x7f050000
-			public const int hello = 2131034112;
+			// aapt resource value: 0x7f080000
+			public const int app_name = 2131230720;
 			
-			// aapt resource value: 0x7f050002
-			public const int new_game_button = 2131034114;
+			// aapt resource value: 0x7f080007
+			public const int clear_statistics_button = 2131230727;
 			
-			// aapt resource value: 0x7f050004
-			public const int options_button = 2131034116;
+			// aapt resource value: 0x7f080001
+			public const int hello_world = 2131230721;
 			
-			// aapt resource value: 0x7f050003
-			public const int solve_button = 2131034115;
+			// aapt resource value: 0x7f080003
+			public const int new_game_button = 2131230723;
 			
-			// aapt resource value: 0x7f050005
-			public const int statistics_button = 2131034117;
+			// aapt resource value: 0x7f080005
+			public const int options_button = 2131230725;
+			
+			// aapt resource value: 0x7f080004
+			public const int solve_sudoku_button = 2131230724;
+			
+			// aapt resource value: 0x7f080006
+			public const int statistics_button = 2131230726;
 			
 			static String()
 			{
@@ -156,6 +269,22 @@ namespace Sudoku
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Xml
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int Preferences = 2130968576;
+			
+			static Xml()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Xml()
 			{
 			}
 		}

@@ -14,22 +14,22 @@ public class GameController {
     private Field field;
     private IntPoint active;
     private boolean solved;
-    private int[][] initial =
-            {{2, 7, 0, 8, 0, 0, 9, 3, 0},
-            {4, 3, 0, 9, 0, 0, 2, 5, 0},
-            {5, 9, 0, 2, 3, 4, 7, 0, 0},
-            {6, 0, 7, 0, 9, 5, 3, 0, 2},
-            {8, 0, 9, 0, 4, 0, 6, 0, 7},
-            {1, 0, 3, 6, 7, 0, 4, 0, 5},
-            {0, 0, 4, 7, 6, 1, 0, 2, 3},
-            {0, 6, 2, 0, 0, 3, 0, 4, 9},
-            {0, 1, 5, 0, 0, 9, 0, 7, 6}};
+    private int[][] initial;
 
     public static GameController getInstance(){
         if (instance == null){
             instance = new GameController();
         }
         return instance;
+    }
+
+    public void setInitial(int[][] initial) {
+        this.initial = initial;
+    }
+
+    public void clean(){
+        active = new IntPoint(-1, -1);
+        field = new Field();
     }
 
     private GameController(){

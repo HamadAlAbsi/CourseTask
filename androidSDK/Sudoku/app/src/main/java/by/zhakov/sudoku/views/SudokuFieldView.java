@@ -1,10 +1,13 @@
 package by.zhakov.sudoku.views;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.res.Configuration;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.graphics.drawable.GradientDrawable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -64,6 +67,21 @@ public class SudokuFieldView extends View{
             }
         }
         super.onDraw(canvas);
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        int orientation = getResources().getConfiguration().orientation;
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+        final int height = getMeasuredHeight();
+        final int width = getMeasuredWidth();
+        if (height < width){
+            setMeasuredDimension(height, height);
+        } else {
+            setMeasuredDimension(width, width);
+        }
+
     }
 
     public void onDigitsPress(int num){

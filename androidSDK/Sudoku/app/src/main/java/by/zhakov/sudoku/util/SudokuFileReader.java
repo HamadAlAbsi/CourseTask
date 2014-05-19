@@ -5,16 +5,16 @@ import android.util.Log;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
  * Created by Aleksei on 15.05.14.
  */
 public class SudokuFileReader {
-    public int[][] getRandSudoku(File f){
+    public static int[][] getRandSudoku(InputStream is){
         try{
-            FileReader fr = new FileReader(f);
-            BufferedReader br = new BufferedReader(fr);
+            BufferedReader br = new BufferedReader(new InputStreamReader(is));
             int count = Integer.parseInt(br.readLine());
             int rand = (int)Math.round(Math.random()*count);
             for (int i = 0; i < rand - 1; i++){
@@ -29,7 +29,7 @@ public class SudokuFileReader {
             }
             return result;
         } catch (Exception e){
-            Log.e(this.getClass().toString(), "FILE EXCEPTION", e);
+            Log.e(SudokuFileReader.class.toString(), "FILE EXCEPTION", e);
         }
         return null;
     }

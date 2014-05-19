@@ -8,5 +8,6 @@
     <string name="solve_sudoku_button">Solve sudoku</string>
     <string name="options_button">Options</string>
     <string name="statistics_button">Statistics</string>
+    <string name="clear_statistics_button">Clear statistics</string>
 
 </resources>
